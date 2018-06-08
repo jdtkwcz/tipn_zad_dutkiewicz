@@ -1,0 +1,24 @@
+#Zadanie 4-1.
+
+?mpg
+#MPG jest zbiorem danych, w którym zawarte s¹ informacje dotycz¹ce okreœlonych modeli samochodów i zu¿ycia przez nich paliwa. Zbiór ten zawiera tylko takie modele samochodów, które mia³y nowe wydanie ka¿dego roku na przestrzeni lat 1999-2008. Dane te s³u¿y³y jako wyznacznik popularnoœci i s¹ udostêpniane przez EPA pod adresem: http://fueleconomy.gov.
+
+# 1) W zbiorze tym wystêpuje 11 rodzajów zmiennych.
+
+# 2) Wskazany zbiór zawiera 234 obserwacje.
+
+# 3) Engine displacement (displ) - pojemnoœæ skokowa silnika;jest to ró¿nica miêdzy jego maksymaln¹ a minimaln¹ objêtoœci¹
+# 3) Miles per gallon (cty) - iloœæ mil mo¿liwa do przejechania na gallonie paliwa
+
+# 4) Zmienne wystêpuj¹ce w zbiorze mpg:
+> (manufacturer) - marka produkji
+> (model) - model auta
+> (displ) - pojemnoœæ skokowa silnika
+> (year) - rok produkcji auta 
+> (cyl) - liczba cylindrów
+> (trans) - rodzaj spalania
+> (drv) - rodzaj napêdu wystêpuj¹cego w aucie
+> (cty) - spalanie w mieœcie; iloœæ mil mo¿liwa do przejechania na gallonie paliwa podró¿uj¹c w mieœcie
+> (hwy) - spalanie na autostradzie; iloœæ mil mo¿liwa do przejechania na gallonie paliwa podró¿uj¹c na autostradzie
+> (fl) - rodzaj paliwa
+> (class) - rodzaj auta
