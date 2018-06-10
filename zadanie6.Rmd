@@ -1,0 +1,95 @@
+---
+title: "Diamenty"
+author: "Jagoda Dutkiewicz"
+date: "6 czerwca 2018"
+output:
+  html_document:
+    df_print: paged
+    theme: readable
+    highlight: tango
+    
+---
+![](diamenciki.jpg)
+
+*Ten artykuł dotyczy minerału*. 
+
+#Diament  
+
+**Diament** bardzo rzadki minerał z gromady pierwiastków rodzimych. Nazwa pochodzi od stgr. *ἀδάμας adamas* (dopełniacz ἀδάμαντος adamantos, łac. diamentum), co znaczy *niepokonany, niezniszczalny* i nawiązuje do wyjątkowej twardości tego minerału. Jest najtwardszą znaną substancją z występujących w przyrodzie.
+
+*Antoine Lavoisier* po raz pierwszy spalił diament pod szklanym kloszem, używając promieni słonecznych skupionych soczewką. Udowodnił w ten sposób, że diament to czysty węgiel.
+    
+##Właściwości
+      
+- Ma dobrą przewodność cieplną (wynikającą z efektywnego przewodnictwa fononowego): 2000 W/(m·K).
+- Jest izolatorem (z wyjątkiem diamentu niebieskiego, będącego półprzewodnikiem).
+- Jest trudno topliwy (około 3500 °C) i odporny na działanie kwasów i zasad.
+- Może zawierać wrostki innych minerałów.
+
+
+
+właściwości chem. i fiz. | właściwości optyczne
+:-:|:-:
+skład chemiczny | barwa
+twardość w skali Mosha | rysa
+przełam | połysk
+łupliwość | współczynnik załamania
+układ krystalograficzny | brak
+gęstość minerału | brak
+
+
+![Struktura diamentu](struktura_diamentu.png) 
+    
+Ze względu na cechy zewnętrzne wyróżnia się kilka typów diamentów:
+
+- **bort** – występuje w postaci nieregularnych zrostów ziarnistych, drobnokrystalicznych skupień
+-**ballas** – włóknisto-promieniste skupienia kryształów diamentu, występuje zwykle z bortem
+- **lonsdaleit** – odmiana diamentu występująca w meteorytach, o sieci regularnej z licznymi defektami
+- **karbonado** – zwany też czarnym diamentem, występuje w postaci drobnoziarnistych, porowatych skupień zabarwionych na czarno, szaro lub ciemnozielono, o różnej wielkości (aż do wielkości jaja), przypominających z wyglądu koks (spotykanych przede wszystkim w Bahii w Brazylii)
+    
+    
+Diamenty naturalne monokrystaliczne klasyfikuje się na cztery grupy:
+
+1. *Typ Ia* – Stanowi 98% całkowitego wydobycia. Zawiera znaczne ilości azotu (około 1%) stanowiącego zanieczyszczenie. Silnie absorbują ultrafiolet, są optycznie przezroczyste dla fal o długości ponad 320 nm, przewodnictwo cieplne 900 W/(m·K), rezystywność elektryczna >1016 Ω·cm
+2. *Typ Ib* – Stanowi 1% całkowitego wydobycia. Zawiera do 0,2% azotu równomiernie rozproszonego w objętości kryształu. Własności optyczne, cieplne i elektryczne jak typ Ia. Do tej grupy należą prawie wszystkie diamenty syntetyczne.
+3. *Typ IIa* – Prawie nie zawiera azotu. Rzadko występuje w przyrodzie. Przewodnictwo cieplne 2600 W/(m·K), rezystywność elektryczna >1016 Ω·cm
+4. *Typ IIb* – Zawiera domieszkę boru. Błękitna barwa, rezystywność elektryczna >10-1000 Ω·cm, są półprzewodnikami typu p
+
+
+
+###Wpływ ilości karatów na cenę diamentów
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+ggplot(data = diamonds) +
+  geom_point(mapping = aes (x = carat, y = price)) +
+  labs(title = "Cena diamentów w zależności od ilości posiadanych karatów", x = "ilość karatów", y = "cena") +
+  theme_light()
+```
+
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+
+library(tidyverse)
+data(diamonds)
+select(diamonds, cut)
+
+#mpg %>% select(diamonds, cut)
+```
+
+
+
+    for(miesiac in rok){
+      if (endsWith(miesiac,"ec"))
+      print(miesiac)
+      }
+
+
+
+
+####Bibliografia
+Źródło wiadomości: <https://pl.wikipedia.org/wiki/Diament>
+
+
+
